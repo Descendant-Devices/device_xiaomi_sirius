@@ -50,8 +50,7 @@ PRODUCT_PACKAGES += \
 
 # Device init scripts
 PRODUCT_PACKAGES += \
-    init.target.rc \
-    init.leds.sh
+    init.target.rc
 
 # GPS
 PRODUCT_COPY_FILES += \
