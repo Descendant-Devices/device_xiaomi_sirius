@@ -689,6 +689,17 @@
          -->
     <bool name="config_fillMainBuiltInDisplayCutout">true</bool>
 
+    <!-- Whether UI for multi user should be shown -->
+    <bool name="config_enableMultiUserUI">true</bool>
+
+    <!-- List supported color modes. -->
+    <integer-array name="config_availableColorModes">
+        <item>0</item> <!-- COLOR_MODE_NATURAL -->
+        <item>1</item> <!-- COLOR_MODE_BOOSTED -->
+        <item>2</item> <!-- COLOR_MODE_SATURATED -->
+        <item>3</item> <!-- COLOR_MODE_AUTOMATIC -->
+    </integer-array>
+
     <!-- Control whether the always on display mode is available. This should only be enabled on
          devices where the display has been tuned to be power efficient in DOZE and/or DOZE_SUSPEND
          states. -->
@@ -712,4 +723,10 @@
 
     <!-- Whether device has a big physical display cutout -->
     <bool name="config_bigPhysicalDisplayCutout">true</bool>
+
+    <!-- Flag indicating whether the device supports dynamic font contrast handling -->
+    <bool name="config_dynamic_font_contrast_available">true</bool>
+ 
+    <!-- Flag indicating whether the device supports dynamic display color handling --> 
+    <bool name="config_dynamic_display_colors_available">true</bool>
 </resources>
