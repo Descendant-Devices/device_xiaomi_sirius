@@ -6,11 +6,14 @@
 
 $(call inherit-product, device/xiaomi/sirius/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common Descendant stuff.
+$(call inherit-product, vendor/descendant/config/common_full_phone.mk)
+
+TARGET_FACE_UNLOCK_SUPPORT := YES
+TARGET_SUPPORTS_BLUR := true
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := lineage_sirius
+PRODUCT_NAME := descendant_sirius
 PRODUCT_DEVICE := sirius
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := MI 8 SE
